@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smile Clinic — стоматология</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2966/2966327.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="hero">
+        <nav class="navbar">
+    <div class="nav-logo">SMILE CLINIC</div>
+
+    <button class="menu-button" onclick="toggleMenu()">☰</button>
+
+    <div class="nav-links">
+        <a href="#services">Услуги</a>
+        <a href="#about">О клинике</a>
+        <a href="#doctors">Врачи</a>
+        <a href="#contacts">Контакты</a>
+    </div>
+
+    <button class="nav-button" onclick="document.querySelector('#contacts').scrollIntoView({behavior: 'smooth'})">
+    Записаться
+</button>
+</nav>
+
+    <div class="logo">SMILE CLINIC</div>
+
+    <div class="hero-content">
+        <p class="subtitle">СОВРЕМЕННАЯ СТОМАТОЛОГИЯ</p>
+
+        <h1>Здоровая улыбка<br>начинается здесь</h1>
+
+        <p class="description">
+            Заботимся о здоровье ваших зубов<br>
+            и создаём улыбки, которыми хочется делиться.
+        </p>
+
+        <button onclick="document.querySelector('#contacts').scrollIntoView({behavior: 'smooth'})">
+    Записаться на приём
+</button>
+    </div>
+
+</header>
+<section class="services" id="services">
+    <div class="section-title">
+        <p class="subtitle">НАШИ УСЛУГИ</p>
+        <h2>Заботимся о вашей улыбке</h2>
+    </div>
+
+    <div class="service-cards">
+
+        <div class="service-card">
+            <div class="service-icon">🦷</div>
+            <h3>Лечение зубов</h3>
+            <p>Безболезненное лечение кариеса и восстановление зубов.</p>
+            <span>от 15 000 ₸</span>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">✨</div>
+            <h3>Профессиональная чистка</h3>
+            <p>Удаление налёта и камня для здоровья и чистоты улыбки.</p>
+            <span>от 20 000 ₸</span>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">😁</div>
+            <h3>Отбеливание</h3>
+            <p>Безопасное осветление эмали и естественно белая улыбка.</p>
+            <span>от 45 000 ₸</span>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🩺</div>
+            <h3>Имплантация</h3>
+            <p>Современное восстановление отсутствующих зубов.</p>
+            <span>от 120 000 ₸</span>
+        </div>
+
+    </div>
+</section>
+<section class="about" id="about">
+
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80" alt="Стоматологическая клиника">
+    </div>
+
+    <div class="about-content">
+        <p class="subtitle">О КЛИНИКЕ</p>
+
+        <h2>Мы заботимся не только о ваших зубах</h2>
+
+        <p>
+            Smile Clinic — современная стоматология,
+            где профессиональное лечение сочетается
+            с комфортом и внимательным отношением к каждому пациенту.
+        </p>
+
+        <div class="advantages">
+            <div>
+                <strong>10+</strong>
+                <span>лет опыта</span>
+            </div>
+
+            <div>
+                <strong>5 000+</strong>
+                <span>довольных пациентов</span>
+            </div>
+
+            <div>
+                <strong>4.9</strong>
+                <span>средняя оценка</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="doctors" id="doctors">
+
+    <div class="section-title">
+        <p class="subtitle">НАША КОМАНДА</p>
+        <h2>Врачи, которым можно доверять</h2>
+        <p>Опытные специалисты заботятся о здоровье вашей улыбки.</p>
+    </div>
+
+    <div class="doctor-cards">
+
+        <div class="doctor-card">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80"
+                 alt="Анна Иванова">
+            <div class="doctor-info">
+                <h3>Анна Иванова</h3>
+                <p>Стоматолог-терапевт</p>
+                <span>Опыт 10 лет</span>
+            </div>
+        </div>
+
+        <div class="doctor-card">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80"
+                 alt="Максим Петров">
+            <div class="doctor-info">
+                <h3>Максим Петров</h3>
+                <p>Стоматолог-хирург</p>
+                <span>Опыт 12 лет</span>
+            </div>
+        </div>
+
+        <div class="doctor-card">
+            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=600&q=80"
+                 alt="Елена Соколова">
+            <div class="doctor-info">
+                <h3>Елена Соколова</h3>
+                <p>Ортодонт</p>
+                <span>Опыт 8 лет</span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section class="pricing" id="pricing">
+
+    <div class="section-title">
+        <p class="subtitle">ЦЕНЫ</p>
+        <h2>Прозрачная стоимость лечения</h2>
+        <p>Точную стоимость врач определяет после консультации.</p>
+    </div>
+
+    <div class="price-cards">
+
+        <div class="price-card">
+            <h3>Консультация</h3>
+            <div class="price">5 000 ₸</div>
+            <p>Первичный осмотр и план лечения.</p>
+            <button onclick="document.querySelector('#contacts').scrollIntoView({behavior: 'smooth'})">
+    Записаться
+</button>
+        </div>
+
+        <div class="price-card featured">
+            <div class="popular">ПОПУЛЯРНО</div>
+            <h3>Профессиональная чистка</h3>
+            <div class="price">20 000 ₸</div>
+            <p>Комплексная чистка зубов и удаление налёта.</p>
+            <button onclick="document.querySelector('#contacts').scrollIntoView({behavior: 'smooth'})">
+    Записаться
+</button>
+        </div>
+
+        <div class="price-card">
+            <h3>Отбеливание</h3>
+            <div class="price">45 000 ₸</div>
+            <p>Безопасное профессиональное отбеливание.</p>
+            <button onclick="document.querySelector('#contacts').scrollIntoView({behavior: 'smooth'})">
+    Записаться
+</button>
+        </div>
+
+    </div>
+
+</section>
+<section class="reviews" id="reviews">
+
+    <div class="section-title">
+        <p class="subtitle">ОТЗЫВЫ</p>
+        <h2>Что говорят наши пациенты</h2>
+    </div>
+
+    <div class="review-cards">
+
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+                Очень приятная клиника. Врач всё подробно объяснила,
+                лечение прошло комфортно и без боли.
+            </p>
+            <h4>Алина М.</h4>
+            <span>Пациент клиники</span>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+                Наконец-то перестал бояться стоматологов.
+                Персонал внимательный, всё современно и аккуратно.
+            </p>
+            <h4>Данияр К.</h4>
+            <span>Пациент клиники</span>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+                Делала профессиональную чистку. Результатом очень довольна,
+                обязательно вернусь снова.
+            </p>
+            <h4>Мадина С.</h4>
+            <span>Пациент клиники</span>
+        </div>
+
+    </div>
+
+</section>
+<section class="contact" id="contacts">
+
+    <div class="contact-info">
+        <p class="subtitle">КОНТАКТЫ</p>
+        <h2>Запишитесь на приём</h2>
+        <p>
+            Оставьте заявку, и администратор свяжется
+            с вами для подтверждения записи.
+        </p>
+
+        <div class="contact-details">
+            <div>
+                <strong>📍 Адрес</strong>
+                <span>г. Астана, ул. Абая, 15</span>
+            </div>
+
+            <div>
+                <strong>📞 Телефон</strong>
+                <span>+7 (700) 123-45-67</span>
+            </div>
+
+            <div>
+                <strong>🕐 Работаем</strong>
+                <span>Пн–Сб: 09:00–20:00</span>
+            </div>
+        </div>
+    </div>
+
+    <form class="booking-form">
+
+        <h3>Записаться на приём</h3>
+
+        <input type="text" placeholder="Ваше имя" required>
+
+        <input type="tel" placeholder="Номер телефона" required>
+
+        <select required>
+            <option value="">Выберите услугу</option>
+            <option>Консультация</option>
+            <option>Лечение зубов</option>
+            <option>Профессиональная чистка</option>
+            <option>Отбеливание</option>
+            <option>Имплантация</option>
+        </select>
+
+        <button type="submit">Отправить заявку</button>
+
+        <p class="form-note">
+            Нажимая кнопку, вы соглашаетесь на обработку данных.
+        </p>
+
+    </form>
+
+</section>
+<script src="script.js"></script>
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+            <h3>SMILE CLINIC</h3>
+            <p>Современная стоматология<br>для здоровой улыбки.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="#services">Услуги</a>
+            <a href="#about">О клинике</a>
+            <a href="#doctors">Врачи</a>
+            <a href="#contacts">Контакты</a>
+        </div>
+
+        <div class="footer-contact">
+    <strong>Связаться с нами</strong>
+
+    <span>+7 (700) 123-45-67</span>
+    <span>Пн–Сб: 09:00–20:00</span>
+
+    <div class="social-links">
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://wa.me/77001234567" target="_blank">WhatsApp</a>
+    </div>
+</div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Smile Clinic. Все права защищены.
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</body>
+</html>
