@@ -25,7 +25,7 @@ form.addEventListener("submit", function(event) {
     const whatsappURL =
         `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
-    window.open(whatsappURL, "_blank");
+    window.location.href = whatsappURL;
 
     form.reset();
 });
